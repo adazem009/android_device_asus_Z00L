@@ -1,0 +1,25 @@
+## Device Tree for Asus Zenfone 2 Laser (720p)
+
+## Specifications
+
+| Feature                 | Specification                     |
+| :---------------------- | :-------------------------------- |
+| CPU                     | Quad-core 1.2 GHz Cortex-A53      |
+| Chipset                 | Snapdragon 410 & Snapdragon 615   |
+| GPU                     | Adreno 405                        |
+| Memory                  | 2/3 GB                            |
+| Shipped Android Version | 5.0.2 (Lollipop)                  |
+| Storage                 | 16/32 GB                          |
+| MicroSD                 | Up to 256 GB                      |
+| Battery                 | 3000 mAh (Removable)              |
+| Dimensions              | 152.5 x 77.2 x 10.8 mm            |
+| Display                 | 720x1280 pixels, 5.5 (~267 PPI)   |
+| Rear Camera             | 13 MP, Dual-LED flash             |
+| Front Camera            | 5 MP                              |
+| Release Date            | September 2015                    |
+
+## Device Picture
+
+![Asus Zenfone 2 Laser](https://cdn2.gsmarena.com/vv/pics/asus/zenfone-2-laser-ze500-1.jpg "Asus Zenfone 2 Laser")
+
+Copyright 2016 - The CyanogenMod Project
