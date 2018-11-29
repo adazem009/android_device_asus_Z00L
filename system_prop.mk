@@ -74,7 +74,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.recomputecrop=0 \
-    debug.enable.sglscale=1 \
     debug.cpurend.vsync=false \
     debug.composition.type=c2d \
     dev.pm.dyn_samplingrate=1 \
@@ -126,8 +125,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.max_starting_bg=8 \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.vendor.qti.am.reschedule_service=true \
-    ro.vendor.qti.core_ctl_min_cpu=0 \
-    ro.vendor.qti.core_ctl_max_cpu=4 \
     ro.vendor.qti.sys.fw.bservice_enable=true \
     ro.vendor.qti.sys.fw.bservice_limit=5 \
     ro.vendor.qti.sys.fw.bservice_age=5000 \
@@ -174,4 +171,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.device_config.runtime_native.usap_pool_enabled=true
+    persist.device_config.runtime_native.usap_pool_enabled=true
