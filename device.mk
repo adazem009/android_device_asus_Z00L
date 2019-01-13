@@ -386,3 +386,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
     wpa_supplicant_overlay.conf
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.asus_8953
