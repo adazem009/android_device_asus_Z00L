@@ -408,4 +408,7 @@
 	
     <!-- Component name for default assistant on this device -->
     <string name="config_defaultAssistantComponentName">com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService</string>
+
+    <!-- Remote server that can provide NTP responses. -->
+    <string translatable="false" name="config_ntpServer">1.android.pool.ntp.org</string>
 </resources>
