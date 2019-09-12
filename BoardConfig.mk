@@ -175,6 +175,9 @@ TARGET_HAS_NO_POWER_STATS := true
 TARGET_HAS_LEGACY_POWER_STATS := true
 TARGET_HAS_NO_WLAN_STATS := true
 
+# Create Root partitions
+BOARD_ROOT_EXTRA_FOLDERS := firmware persist factory asdf
+
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
 
