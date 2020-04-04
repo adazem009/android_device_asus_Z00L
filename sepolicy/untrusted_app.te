@@ -3,7 +3,6 @@ allow untrusted_app bootchart_data_file:dir { read search };
 allow untrusted_app configfs:dir read;
 allow untrusted_app debugfs:dir read;
 allow untrusted_app debugfs:file getattr;
-allow untrusted_app debugfs_rpm:file getattr;
 allow untrusted_app debugfs_wakeup_sources:file getattr;;
 allow untrusted_app fac_file:dir getattr;
 allow untrusted_app file_contexts_file:file getattr;
