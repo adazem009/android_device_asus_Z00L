@@ -46,9 +46,6 @@ TARGET_BOARD_PLATFORM := msm8916
 # Properties
 TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
 
-# Shipping API level (for CTS backward compatibility)
-PRODUCT_SHIPPING_API_LEVEL := 21
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 TARGET_NO_BOOTLOADER := true
