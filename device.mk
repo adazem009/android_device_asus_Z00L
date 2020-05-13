@@ -304,6 +304,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     sensors.msm8916
 
+# System Properties
+$(call inherit-product, $(LOCAL_PATH)/system_prop.mk)
+
 # Telephony packages
 PRODUCT_PACKAGES += \
     telephony-ext \
