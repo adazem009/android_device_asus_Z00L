@@ -64,6 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.enable.sglscale=1 \
     debug.hwui.use_buffer_age=false \
     debug.egl.hw=0 \
     debug.enable.sglscale=1 \
@@ -79,7 +80,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     persist.hwc.mdpcomp.enable=true \
-    ro.sf.lcd_density=300
+    ro.sf.lcd_density=300 \
+    persist.hwc.ptor.enable=true
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
