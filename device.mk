@@ -17,6 +17,13 @@
 # inherit from the proprietary version
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)
 
+# PixelGapps
+ifeq ($(shell test -e vendor/gapps/config.mk && echo -n yes), yes)
+    TARGET_GAPPS_ARCH=arm64
+    TARGET_DENSITY=xhdpi
+    $(call inherit-product, vendor/gapps/config.mk)
+endif
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
