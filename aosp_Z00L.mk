@@ -16,14 +16,22 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l.mk)
 
 # Inherit from Z00L device
 $(call inherit-product, device/asus/Z00L/device.mk)
 
-# Inherit some common AOSP stuff.
+# Inherit some common AOSP-AEX stuff.
+ifeq ($(shell test -e vendor/aosp/config/aex_props.mk && echo -n yes), yes)
 $(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+endif
+# Inherit some common AOSP-PE stuff.
+ifeq ($(shell test -e vendor/pixelstyle/config.mk && echo -n yes), yes)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+endif
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
