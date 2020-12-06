@@ -17,7 +17,11 @@
 # inherit from the proprietary version
 -include vendor/asus/msm8916-common/BoardConfigVendor.mk
 
-VENDOR_PATH := device/asus/msm8916-common
+# Assert
+VENDOR_PATH := device/asus/Z00L
+
+# Board
+TARGET_BOARD_INFO_FILE := $(VENDOR_PATH)/board-info.txt
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
@@ -42,6 +46,9 @@ TARGET_BOARD_PLATFORM := msm8916
 # Properties
 TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
 
+# Shipping API level (for CTS backward compatibility)
+PRODUCT_SHIPPING_API_LEVEL := 21
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 TARGET_NO_BOOTLOADER := true
@@ -55,6 +62,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_SOURCE := kernel/asus/msm8916
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
+TARGET_KERNEL_CONFIG := Z00L_defconfig
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"

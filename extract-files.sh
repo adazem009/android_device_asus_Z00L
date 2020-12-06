@@ -18,6 +18,13 @@
 
 set -e
 
+export INITIAL_COPYRIGHT_YEAR=2016
+
+# Required!
+export DEVICE=Z00L
+export DEVICE_COMMON=msm8916-common
+export VENDOR=asus
+
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
