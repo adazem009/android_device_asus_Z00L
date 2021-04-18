@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_Z00L.mk
+    $(LOCAL_DIR)/havoc_Z00L.mk
     
 COMMON_LUNCH_CHOICES := \
-    lineage_Z00L-userdebug \
-    lineage_Z00L-eng
+    havoc_Z00L-userdebug \
+    havoc_Z00L-eng
